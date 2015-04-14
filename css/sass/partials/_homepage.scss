@@ -1,0 +1,388 @@
+.hero-banner {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+div.site-container .hero-banner h2 {
+	color: $white;
+}
+.hero-banner img.hero_image {
+	display: block;
+	background-image: url(images/homepage/hero_desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.hero-banner .hpBanner {
+	position: absolute;
+	top: 0;
+	width: 300px;
+	height: 100%;
+	float: left;
+	background: $hp-banner;
+	padding: 25px 40px;
+	color: $white;
+}
+.hero-banner .hpBanner h2 {
+	font-size: 40px;
+	margin: 10px 0 0 0;
+}
+// register button
+.hero-banner .hpBanner a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 30px;
+	@include font_title_copy;
+}
+.hero-banner .hpBanner a .register-button {
+	color: $white;
+	background: $red;
+	padding: 5px 15px;
+	width: 270px;	
+	margin: 30px 0;
+	position: relative;
+	.arrow {
+		background-image: url(images/homepage/arrow.png);
+		background-repeat: no-repeat;
+		height: 20px;
+		width: 20px;
+		float: right;
+		position: absolute;
+		top: 35%;
+		right: 5%;
+	}
+}
+
+.hero-banner .hpBanner p {
+	@include font_body_copy;
+}
+// TOP 5 TEAMS STYLING
+.top5 .table-title {
+	font-size: 16px;
+}
+.top5 .table-title span {
+	padding: 10px 0;
+}
+.top5 {	
+	width: 100%;
+	text-align: left;
+	margin-top: 60px;
+}
+table.top5teams {
+	font-size: 14px;
+}
+table.top5teams th.top5Title  {
+	font-size: 17px;
+	padding: 5px 0;
+}
+table.top5teams td.teamname {
+	width: 219px;
+	float: left;
+	padding: 3px 0;
+}
+table.top5teams td.members {	
+	float: right;
+	width: 60px;
+	text-align: right;	
+	padding-right: 20px;
+	background-image: url(images/layout/members_icon.png);
+	background-repeat: no-repeat;
+	background-position: 70px 4px;
+	float: right;
+	margin: 3px 0 0 0;
+}
+// UNI SELECT SECTION STYLING
+.main_content {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.uni-section p {
+	@include font_body_copy;
+}
+.pickUni {
+	top: 0;
+	width: 300px;
+	float: left;
+	background: $orange;
+	padding: 30px 40px;
+	line-height: 20px;
+	position: absolute;
+	height: 100%;
+	h3 {
+		margin: 20px 0;
+		text-transform: none;
+		font-size: 18px;
+		color: $white;
+	}
+	a {
+		color: $white;
+	}
+	p {
+		color: $white;
+	}
+}
+.js-active .teams-dropdown button { display: none}
+.joinEvent {
+	margin: 15px 0;
+}
+
+// form STYLING
+.teams-dropdown form select {
+	width: 100%;
+	border: none;
+	font-size: 20px;
+	padding: 5px;
+	color: $black;
+	cursor: pointer;
+	margin: 0 0 20px 0;
+	background: $white;
+	text-transform: normal;
+}
+.teams-dropdown form select option:checked {
+	text-transform: normal;
+} 
+// show event
+a.uni_register {
+	font-family: $font_title_copy;
+	font-size: 20px;
+	padding-right: 30px;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0;
+	color: $black;		
+	background-image: url(images/homepage/arrow__black.png);
+	background-repeat: no-repeat;
+	background-position: 280px 2px;
+	display: block;
+}
+span.customSelect { 
+    background:#fff url(images/homepage/arrow_orange.png) right center no-repeat;
+    padding:7px 9px;
+    width:95%;
+}
+// End uni select
+.underline-white {
+	width: 100%;
+	background: $white;
+	height: 1px;
+	margin: 25px 0 35px 0;
+}
+
+// spread social
+.spread-social {
+	margin: 55px 0 20px 0!important;
+	overflow: hidden;
+}
+.spread-social nav ul {
+	padding: 0;
+	margin: 0;
+}
+.spread-social ul li {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	width: 40px;
+	background-image: url(images/layout/sprite_map.png);
+	background-repeat: no-repeat;
+	&:last-child {
+		padding-right: 0;
+	}
+	img {
+		display: block;
+	}
+}
+.spread-social ul li.twitter_box {
+	background-position: -85px -43px;
+}
+.spread-social ul li.fb_box {
+	background-position: -41px -43px;
+}
+.spread-social ul li.web_box {
+	background-position: 0px -43px;
+}
+// GET INVOLVED SECTION
+.get-involved {
+	float: right;
+	width: 460px;
+	padding: 0; 	
+}
+.get-involved a {
+	color: $orange;
+	border-bottom: 1px solid $orange;
+}
+.get-involved p {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+@include respond-to(tablet) {
+	.hide_tablet {
+		display: none!important;
+	}
+	.hero-banner .hpBanner {
+		width: 34%;		
+		padding: 5px 3%;
+	}
+	.hero-banner img.hero_image {
+		background-image: url(images/homepage/hero_tablet.jpg);
+		background-size: cover;
+		min-height: 300px;
+	}
+	.hero-banner .hpBanner h2 {
+		font-size: 28px;
+		margin: 0;
+		line-height: 30px;
+	}
+	// register button
+	.hero-banner .hpBanner a {
+		font-size: 21px;
+	}
+	.hero-banner .hpBanner a .register-button {
+		padding: 6px 2% 3px 2%;
+		width: 96%;	
+		margin: 10px 0;
+	}
+	.hero-banner .hpBanner a .register-button .arrow {
+		top: 29%;
+	}
+	.hero-banner .hpBanner p {
+		font-size: 11px;
+		line-height: 16px;
+	}
+	// TOP 5 TEAMS STYLING
+	.top5 .table-title {
+		font-size: 14px;
+	}
+	.top5 {	
+		width: 100%;
+		font-size: 13px;
+		margin-top: 0px;
+	}
+	.top5 table {
+		width: 100%;
+	}
+	.top5 table thead {
+		font-size: 16px;
+	}
+	table.top5teams td.teamname {
+		width: 80%;
+	}
+	table.top5teams td.members {
+		width: 7%;
+	}
+
+	table.top5teams td.members {
+		background-position: 24px 0;
+	}
+
+	// UNI SELECT SECTION STYLING
+	.pickUni {
+		width: 34%;
+		padding: 20px 3%;
+		font-size: 14px;
+		border-right: 0px solid $orange;
+		line-height: 21px;
+		h3 {
+			font-size: 17px;
+		}
+	}
+
+	// show event
+	a.uni_register {
+		font-size: 16px;
+		background-position: 125% 46%;
+	}
+	// GET INVOLVED SECTION
+	.get-involved {
+		width: 55%;
+	}
+}
+@include respond-to(mobile) { 
+	.hpContent 	.hide_homepage {
+		display: none;
+	}
+	.hero-banner .hpBanner {
+		position: relative;
+		width: 94%;
+		float: none;
+		margin: 0;
+		padding: 25px 3%;
+		border-right: 3px solid $hp-banner;
+	}
+	.hero-banner img.hero_image {
+		background-image: url(images/homepage/hero_mobile.jpg);
+	}
+	.hero-banner .hpBanner h2 {
+		font-size: 31px;
+	}
+	
+	.hero-banner .hpBanner a {
+		font-size: 23px;
+	}
+	.hero-banner .hpBanner a .register-button {
+		padding: 4% 4% 3% 4%;
+		width: 92%;	
+		background-position: 75% 46%;
+	}
+
+	// TOP 5 TEAMS STYLING
+	.top5 {	
+		margin-top: 0px;
+	}
+	.top5 .table-title {
+		font-size: 12px;
+	}
+	table.top5teams td.teamname {
+		width: 80%;
+	}
+	table.top5teams td.members {
+		width: 20px;
+		background-position: 30px 3px;
+	}
+	// pick a uni
+	.pickUni {
+		width: 92%;
+		float: none;
+		padding: 15px 4%;
+		position: relative;
+	}
+	span.customSelect { 
+	    width:90%;
+	}
+
+	// GET INVOLVED SECTION
+	.get-involved {
+		clear: both;
+		float: none;
+		width: 92%;
+		padding: 15px 4% 35px 4%;
+		h3 {
+			font-size: 14px;
+		}
+	}
+	.spread-social {
+		margin: 0 0 20px 0;
+		font-size: 14px;
+	}
+	.spread-social h5 {
+		padding: 0 0 15px 0;
+	}
+	.get-involved .spread-social ul li.twitter_box {
+		background-position: -85px -0;
+	}
+	.get-involved .spread-social ul li.fb_box {
+		background-position: -41px 0;
+	}
+	.spread-social ul li.web_box {
+		background-position: 0px 0;
+	}
+	a.uni_register {
+		font-size: 18px;
+		background-position: 255px 2px;
+	}
+	.uni_register span.redArrow {
+		top: 2px;
+		right: 18px;
+	}
+}

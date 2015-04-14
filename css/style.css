@@ -1,0 +1,2513 @@
+@charset "UTF-8";
+/*! normalize.css v1.0.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+@import url("//hello.myfonts.net/count/2be357");
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+q {
+  quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin-top: 0 !important;
+}
+
+div.site-container {
+  width: 1220px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+div.site-container h2 {
+  color: #f7941d;
+}
+
+div.site-container h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  margin: 40px 0 0 0;
+  font-family: AvantGardeGothicITCW01Bd, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+div.site-container a {
+  text-decoration: none;
+}
+
+div.site-container .main_content {
+  padding: 0 0 195px 0;
+}
+
+div.hp-container .main_content {
+  padding: 0 0 250px 0;
+}
+
+div.site-container nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.section_inner {
+  padding: 0 140px;
+}
+
+.show_desktop {
+  display: block !important;
+}
+
+.show_mobile {
+  display: none !important;
+}
+
+.hide_tablet {
+  display: block !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.siteCTA {
+  background: #f7941d;
+  text-transform: uppercase;
+  padding: 15px 38px;
+  font-family: AvantGardeGothicITCW01Bd, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.siteCTA a {
+  color: #fff !important;
+}
+
+select.border {
+  border: 1px solid #ececec;
+}
+
+.site-container form input, .site-container form select {
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.site-container form input, .site-container form select.border {
+  -webkit--webkit-appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz--webkit-appearance: none;
+  -o--webkit-appearance: none;
+  border: 1px solid #ececec;
+}
+
+.desktop {
+  display: block !important;
+}
+
+.tablet {
+  display: none !important;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  div.site-container {
+    width: 100%;
+    min-width: 655px;
+  }
+
+  .section_inner {
+    padding: 0 3%;
+  }
+
+  .tablet {
+    display: block !important;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .desktop, .show_desktop {
+    display: none !important;
+  }
+
+  .show_mobile {
+    display: block !important;
+  }
+
+  .tablet {
+    display: none !important;
+  }
+
+  div.site-container {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  div.site-container .main_content {
+    padding: 0;
+  }
+
+  .section_inner {
+    padding: 0;
+  }
+
+  div.site-container h2 {
+    font-size: 22px;
+  }
+
+  div.site-container h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 20px 0 0 0;
+  }
+
+  .siteCTA {
+    margin: 10px 0;
+  }
+}
+header {
+  position: relative;
+  overflow: hidden;
+  width: 940px;
+  padding: 0 140px;
+  background: #fff;
+  text-transform: uppercase;
+}
+
+header .headerBanner {
+  top: 0;
+  width: 120px;
+  padding: 15px 10px;
+  float: left;
+  background: #261c02;
+  color: #fff;
+  background: #261c02;
+}
+
+header .register-logo {
+  width: 120px;
+  padding: 15px 10px;
+}
+
+header .headerBanner h1 {
+  text-align: center;
+  margin: 0;
+}
+
+header .headerBanner h1 img {
+  width: 101px;
+  margin: auto;
+  display: block;
+}
+
+.home header .headerBanner {
+  padding: 25px 40px;
+  width: 300px;
+}
+
+nav.siteNav {
+  float: right;
+  width: auto;
+  margin: 30px 0 0 0;
+}
+
+nav.siteNav ul {
+  padding: 0;
+}
+
+nav.siteNav ul li {
+  float: right;
+  list-style: none;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-family: AvantGardeGothicITCW01Bd, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav.siteNav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav.siteNav ul li.nav-twitter {
+  margin: 20px 25px 5px 0;
+  padding: 0 0 0 30px;
+}
+
+nav.siteNav ul li.nav-cruk {
+  padding: 15px 15px 5px 20px;
+}
+
+nav.siteNav ul li.logIn {
+  margin: 10px 0 5px 15px;
+  padding: 10px 10px;
+  display: none;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  header {
+    width: 94%;
+    padding: 0 3%;
+  }
+
+  .home header .headerBanner, header .headerBanner {
+    width: 42%;
+    padding: 5px 0;
+    border: 2px solid #261c02;
+  }
+
+  header .headerBanner {
+    width: 120px;
+    padding: 15px 10px;
+  }
+
+  header .register-logo {
+    width: 120px;
+    padding: 15px 10px;
+  }
+
+  nav.siteNav {
+    width: 57%;
+    margin: 5px 0 0 0;
+  }
+
+  nav.siteNav ul li {
+    margin: 0 5px;
+    padding: 5px 1%;
+    font-size: 13px;
+  }
+
+  nav.siteNav ul li.nav-cruk {
+    padding: 4px 15px 5px 27px;
+  }
+
+  nav.siteNav ul li.nav-cruk {
+    margin: 15px 0 5px 15px;
+    width: 117px;
+  }
+
+  nav.siteNav ul li.nav-cancer {
+    width: 84px;
+    margin: 0;
+  }
+
+  nav.siteNav ul li.logIn {
+    margin: 25px 0 5px 15px;
+    width: 75px;
+    padding: 5px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header {
+    width: 100%;
+    padding: 0;
+  }
+
+  .home header .headerBanner, header .headerBanner {
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 20px 0 20px;
+  }
+
+  nav.siteNav {
+    width: 92%;
+    margin: auto;
+    float: none;
+    border-bottom: 1px solid #d4d2cc;
+    overflow: hidden;
+    padding-bottom: 0;
+    padding: 0 0 0;
+  }
+
+  .home header nav.siteNav {
+    padding: 0 0 20px;
+  }
+
+  nav.siteNav ul li {
+    width: auto;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  div.nav-underline {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    background: #d4d2cc;
+    clear: both;
+  }
+
+  nav.siteNav ul li.nav-cancer {
+    width: 31%;
+    float: left;
+  }
+
+  nav.siteNav ul li.nav-cruk {
+    margin: 4px 0 0 0;
+    float: right;
+    width: 57%;
+    padding: 15px 15px 5px 15px;
+  }
+
+  nav.siteNav ul li.nav-twitter {
+    margin: 14px 0 5px 0;
+    float: left;
+    padding: 0;
+  }
+
+  nav.siteNav ul li.logIn {
+    float: right;
+    margin: 5px 0 5px 0;
+    padding: 8px 0;
+    width: 45%;
+    display: none;
+  }
+
+  .home header nav.siteNav {
+    display: none !important;
+    padding: 0 0 20px;
+  }
+
+  .home nav.siteNav {
+    padding: 0 0 10px;
+  }
+}
+.hero-banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+div.site-container .hero-banner h2 {
+  color: #fff;
+}
+
+.hero-banner img.hero_image {
+  display: block;
+  background-image: url(images/homepage/hero_desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.hero-banner .hpBanner {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  float: left;
+  background: #261c02;
+  padding: 25px 40px;
+  color: #fff;
+}
+
+.hero-banner .hpBanner h2 {
+  font-size: 40px;
+  margin: 10px 0 0 0;
+}
+
+.hero-banner .hpBanner a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: AvantGardeGothicITCW01Bd, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero-banner .hpBanner a .register-button {
+  color: #fff;
+  background: #ef4135;
+  padding: 5px 15px;
+  width: 270px;
+  margin: 30px 0;
+  position: relative;
+}
+.hero-banner .hpBanner a .register-button .arrow {
+  background-image: url(images/homepage/arrow.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  float: right;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+
+.hero-banner .hpBanner p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.top5 .table-title {
+  font-size: 16px;
+}
+
+.top5 .table-title span {
+  padding: 10px 0;
+}
+
+.top5 {
+  width: 100%;
+  text-align: left;
+  margin-top: 60px;
+}
+
+table.top5teams {
+  font-size: 14px;
+}
+
+table.top5teams th.top5Title {
+  font-size: 17px;
+  padding: 5px 0;
+}
+
+table.top5teams td.teamname {
+  width: 219px;
+  float: left;
+  padding: 3px 0;
+}
+
+table.top5teams td.members {
+  float: right;
+  width: 60px;
+  text-align: right;
+  padding-right: 20px;
+  background-image: url(images/layout/members_icon.png);
+  background-repeat: no-repeat;
+  background-position: 70px 4px;
+  float: right;
+  margin: 3px 0 0 0;
+}
+
+.main_content {
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.uni-section p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.pickUni {
+  top: 0;
+  width: 300px;
+  float: left;
+  background: #f7941d;
+  padding: 30px 40px;
+  line-height: 20px;
+  position: absolute;
+  height: 100%;
+}
+.pickUni h3 {
+  margin: 20px 0;
+  text-transform: none;
+  font-size: 18px;
+  color: #fff;
+}
+.pickUni a {
+  color: #fff;
+}
+.pickUni p {
+  color: #fff;
+}
+
+.js-active .teams-dropdown button {
+  display: none;
+}
+
+.joinEvent {
+  margin: 15px 0;
+}
+
+.teams-dropdown form select {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+  color: #000;
+  cursor: pointer;
+  margin: 0 0 20px 0;
+  background: #fff;
+  text-transform: normal;
+}
+
+.teams-dropdown form select option:checked {
+  text-transform: normal;
+}
+
+a.uni_register {
+  font-family: AvantGardeGothicITCW01Bd, Arial, sans-serif;
+  font-size: 20px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  position: relative;
+  margin: 30px 0;
+  color: #000;
+  background-image: url(images/homepage/arrow__black.png);
+  background-repeat: no-repeat;
+  background-position: 280px 2px;
+  display: block;
+}
+
+span.customSelect {
+  background: #fff url(images/homepage/arrow_orange.png) right center no-repeat;
+  padding: 7px 9px;
+  width: 95%;
+}
+
+.underline-white {
+  width: 100%;
+  background: #fff;
+  height: 1px;
+  margin: 25px 0 35px 0;
+}
+
+.spread-social {
+  margin: 55px 0 20px 0 !important;
+  overflow: hidden;
+}
+
+.spread-social nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.spread-social ul li {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  width: 40px;
+  background-image: url(images/layout/sprite_map.png);
+  background-repeat: no-repeat;
+}
+.spread-social ul li:last-child {
+  padding-right: 0;
+}
+.spread-social ul li img {
+  display: block;
+}
+
+.spread-social ul li.twitter_box {
+  background-position: -85px -43px;
+}
+
+.spread-social ul li.fb_box {
+  background-position: -41px -43px;
+}
+
+.spread-social ul li.web_box {
+  background-position: 0px -43px;
+}
+
+.get-involved {
+  float: right;
+  width: 460px;
+  padding: 0;
+}
+
+.get-involved a {
+  color: #f7941d;
+  border-bottom: 1px solid #f7941d;
+}
+
+.get-involved p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .hide_tablet {
+    display: none !important;
+  }
+
+  .hero-banner .hpBanner {
+    width: 34%;
+    padding: 5px 3%;
+  }
+
+  .hero-banner img.hero_image {
+    background-image: url(images/homepage/hero_tablet.jpg);
+    background-size: cover;
+    min-height: 300px;
+  }
+
+  .hero-banner .hpBanner h2 {
+    font-size: 28px;
+    margin: 0;
+    line-height: 30px;
+  }
+
+  .hero-banner .hpBanner a {
+    font-size: 21px;
+  }
+
+  .hero-banner .hpBanner a .register-button {
+    padding: 6px 2% 3px 2%;
+    width: 96%;
+    margin: 10px 0;
+  }
+
+  .hero-banner .hpBanner a .register-button .arrow {
+    top: 29%;
+  }
+
+  .hero-banner .hpBanner p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .top5 .table-title {
+    font-size: 14px;
+  }
+
+  .top5 {
+    width: 100%;
+    font-size: 13px;
+    margin-top: 0px;
+  }
+
+  .top5 table {
+    width: 100%;
+  }
+
+  .top5 table thead {
+    font-size: 16px;
+  }
+
+  table.top5teams td.teamname {
+    width: 80%;
+  }
+
+  table.top5teams td.members {
+    width: 7%;
+  }
+
+  table.top5teams td.members {
+    background-position: 24px 0;
+  }
+
+  .pickUni {
+    width: 34%;
+    padding: 20px 3%;
+    font-size: 14px;
+    border-right: 0px solid #f7941d;
+    line-height: 21px;
+  }
+  .pickUni h3 {
+    font-size: 17px;
+  }
+
+  a.uni_register {
+    font-size: 16px;
+    background-position: 125% 46%;
+  }
+
+  .get-involved {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hpContent .hide_homepage {
+    display: none;
+  }
+
+  .hero-banner .hpBanner {
+    position: relative;
+    width: 94%;
+    float: none;
+    margin: 0;
+    padding: 25px 3%;
+    border-right: 3px solid #261c02;
+  }
+
+  .hero-banner img.hero_image {
+    background-image: url(images/homepage/hero_mobile.jpg);
+  }
+
+  .hero-banner .hpBanner h2 {
+    font-size: 31px;
+  }
+
+  .hero-banner .hpBanner a {
+    font-size: 23px;
+  }
+
+  .hero-banner .hpBanner a .register-button {
+    padding: 4% 4% 3% 4%;
+    width: 92%;
+    background-position: 75% 46%;
+  }
+
+  .top5 {
+    margin-top: 0px;
+  }
+
+  .top5 .table-title {
+    font-size: 12px;
+  }
+
+  table.top5teams td.teamname {
+    width: 80%;
+  }
+
+  table.top5teams td.members {
+    width: 20px;
+    background-position: 30px 3px;
+  }
+
+  .pickUni {
+    width: 92%;
+    float: none;
+    padding: 15px 4%;
+    position: relative;
+  }
+
+  span.customSelect {
+    width: 90%;
+  }
+
+  .get-involved {
+    clear: both;
+    float: none;
+    width: 92%;
+    padding: 15px 4% 35px 4%;
+  }
+  .get-involved h3 {
+    font-size: 14px;
+  }
+
+  .spread-social {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+  }
+
+  .spread-social h5 {
+    padding: 0 0 15px 0;
+  }
+
+  .get-involved .spread-social ul li.twitter_box {
+    background-position: -85px -0;
+  }
+
+  .get-involved .spread-social ul li.fb_box {
+    background-position: -41px 0;
+  }
+
+  .spread-social ul li.web_box {
+    background-position: 0px 0;
+  }
+
+  a.uni_register {
+    font-size: 18px;
+    background-position: 255px 2px;
+  }
+
+  .uni_register span.redArrow {
+    top: 2px;
+    right: 18px;
+  }
+}
+.registerSection {
+  float: left;
+  width: 489px;
+  margin-bottom: 100px;
+}
+
+.registerSection .reg_title h2 {
+  font-size: 36px;
+  margin: 40px 0 0 0;
+}
+
+.registerSection .reg_title p {
+  margin: 0 0 30px 0;
+}
+
+.registerSection form {
+  font-size: 14px;
+  margin: 0 0 35px 0;
+}
+.registerSection form .required_text {
+  margin-left: 160px;
+  margin-top: -10px;
+}
+
+.registerSection form .form-item {
+  width: 100%;
+  clear: both;
+  padding: 5px 0;
+}
+
+.registerSection form label {
+  width: 160px;
+  float: left;
+  padding: 8px 0 0 0;
+}
+
+.registerSection form input, .registerSection form select {
+  padding: 11px 8px;
+  width: 282px;
+}
+
+.error-text {
+  color: #ef4135;
+}
+
+.registerSection form input.error, .registerSection form select.error {
+  border: 1px solid #ef4135;
+  background: #fdecea;
+  opacity: 1 !important;
+}
+.registerSection form input.error p.required_text, .registerSection form select.error p.required_text {
+  display: none;
+}
+
+.registerSection form label.error, .logIn-box form label.error {
+  display: none !important;
+  width: 0;
+}
+
+.registerSection form select {
+  width: 300px;
+}
+
+.registerSection form select.border option {
+  border: 1px solid #ececec;
+}
+
+form button.submit {
+  width: 300px;
+  border: none;
+  margin-left: 160px;
+  padding: 12px 0;
+  color: #fff;
+}
+
+.required_text {
+  margin-left: 160px;
+  margin-top: -10px;
+}
+
+.registerSection form span.customSelect {
+  background: #f9f9f9 url(images/homepage/arrow_black.png) right center no-repeat;
+  padding: 10px;
+  width: 57%;
+  border: 1px solid #ececec;
+}
+
+::-webkit-input-placeholder {
+  color: #b9b6ae;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #b9b6ae;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b9b6ae;
+}
+
+:-ms-input-placeholder {
+  color: #b9b6ae;
+}
+
+.logIn-box {
+  float: right;
+  width: 340px;
+  background: #261c02;
+  color: #fff;
+  margin: 155px 0 0 0;
+  padding: 20px;
+}
+
+.logIn-box .required_text {
+  margin-left: 105px;
+  margin-top: 0px;
+}
+
+.logIn-box h3 {
+  font-size: 18px;
+  margin: 0 0 30px 0;
+  text-transform: none !important;
+}
+
+.logIn-box form .form-item {
+  width: 100%;
+  clear: both;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.logIn-box form label {
+  width: 105px;
+  float: left;
+  padding: 10px 0;
+}
+
+.logIn-box form input {
+  padding: 11px 2px;
+  border: 1px solid #ececec;
+  width: 224px;
+}
+
+.logIn-box form button.submit {
+  width: 230px;
+  margin-left: 105px;
+}
+
+.logIn-box form label.error {
+  width: 0;
+}
+
+.logIn-box form input.error {
+  border: 1px solid #ef4135;
+  background: #fdecea;
+}
+
+.forgot-pwd a {
+  color: #f7941d;
+  border-bottom: 1px solid #f7941d;
+  font-size: 14px;
+  margin-left: 105px;
+}
+
+span.styled_black {
+  background: #f9f9f9 url(images/homepage/arrow_black.png) right center no-repeat;
+  padding: 7px 9px;
+  width: 280px;
+  border: 1px solid #ececec;
+}
+
+.selectStyle {
+  position: relative;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .registerSection {
+    width: 55%;
+  }
+
+  .registerSection .reg_title h2 {
+    font-size: 26px;
+  }
+
+  .registerSection .reg_title p {
+    margin: 0 0 25px 0;
+    font-size: 14px;
+  }
+
+  .registerSection form {
+    font-size: 14px;
+    margin: 0 0 30px 0;
+  }
+
+  .registerSection form label {
+    width: 32%;
+  }
+
+  .registerSection form input, .registerSection form select {
+    width: 62%;
+  }
+
+  .registerSection form input[type="date"] {
+    padding: 20px 8px 20px 10px;
+  }
+
+  .registerSection form select {
+    width: 68%;
+  }
+
+  form button.submit {
+    width: 66%;
+    margin-left: 32%;
+  }
+
+  .required_text {
+    margin-left: 32%;
+  }
+
+  .registerSection form span.customSelect {
+    width: 61%;
+  }
+
+  .logIn-box {
+    width: 35%;
+    margin: 140px 0 0 0;
+    padding: 10px;
+  }
+
+  .logIn-box .form-item {
+    padding: 0;
+  }
+
+  .logIn-box h3 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+
+  .logIn-box form label {
+    padding: 0;
+  }
+
+  .logIn-box form input {
+    width: 96%;
+  }
+
+  .logIn-box form button.submit {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .forgot-pwd a {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .registerSection {
+    float: none;
+    width: 94%;
+    padding: 0 3%;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .register p {
+    margin: 0;
+  }
+
+  .registerSection .reg_title h2 {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+  }
+
+  .registerSection .reg_title p {
+    margin: 0 0 15px 0;
+    width: 80%;
+  }
+
+  .registerSection form {
+    margin: 0 0 20px 0;
+  }
+
+  .registerSection form .form-item {
+    width: 100%;
+  }
+
+  .registerSection form label {
+    width: 100%;
+  }
+
+  .registerSection form input, .registerSection form select {
+    width: 92%;
+    top: 24px;
+    font-size: 16px;
+  }
+
+  .registerSection form select {
+    width: 100%;
+  }
+
+  form button.submit {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .required_text {
+    margin-left: 0 !important;
+  }
+
+  .registerSection form span.customSelect {
+    width: 91%;
+  }
+
+  .logIn-box {
+    float: none;
+    width: 94%;
+    margin: 0;
+    padding: 20px 3%;
+    border-right: 3px solid #261c02;
+  }
+
+  .logIn-box h3 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+
+  .logIn-box form label {
+    width: 100%;
+  }
+
+  .logIn-box form input {
+    width: 97%;
+  }
+
+  .logIn-box form button.submit {
+    width: 99%;
+    margin-left: 0;
+  }
+
+  .forgot-pwd {
+    text-align: center;
+  }
+
+  .forgot-pwd a {
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+.createPage {
+  width: 100%;
+}
+.createPage a {
+  color: #f7941d;
+}
+.createPage p {
+  font-size: 14px;
+}
+
+.createPage h2 {
+  font-size: 36px;
+  color: #f7941d;
+  margin: 0 0 30px 0;
+}
+
+.createPage form {
+  font-size: 14px;
+  margin: 0 0 30px 0;
+}
+
+.createPage form .form-item {
+  width: 100%;
+  clear: both;
+  padding: 5px 0;
+}
+
+.createPage form .form-item label {
+  width: 320px;
+  float: left;
+  padding: 8px 0;
+}
+
+.createPage form .form-item label.jg-placeholder {
+  width: 130px;
+  padding-top: 12px;
+}
+
+.createPage form input, .createPage form select {
+  padding: 11px 2px;
+  background: #f9f9f9;
+  box-shadow: none;
+  width: 294px;
+}
+
+.createPage form input.jg-placeholder-input {
+  width: 163px;
+}
+
+select.border {
+  border: 1px solid #ececec;
+}
+
+.createPage form select {
+  width: 300px;
+}
+
+.createPage form select.border option {
+  border: 1px solid #ececec;
+}
+
+.createPage form button.submit {
+  width: 300px;
+  border: none;
+  margin-left: 0;
+  padding: 12px 0;
+  margin: 20px 0 0 0;
+}
+
+.required_text {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.error-list {
+  margin-left: 160px;
+  margin-top: -10px;
+  color: #ef4135;
+}
+.error-list ul {
+  padding: 0;
+}
+
+.createPage form .pick-amount {
+  position: relative;
+}
+
+.createPage form .pick-amount input {
+  width: 60px;
+}
+
+.createPage form .pick-amount input.radio {
+  width: 40px;
+}
+
+.createPage form .pick-amount label p {
+  margin: 0;
+  padding: 2px 0 0 0;
+}
+
+.enterAmount {
+  position: relative;
+  width: 403px;
+  float: right;
+  font-size: 14px;
+}
+
+.unit {
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  z-index: 9;
+}
+
+.createPage form .pick-amount input.input-amount {
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.createPage form .radiogroup-row label {
+  width: 30px;
+}
+
+.createPage form .radiogroup-row input[type=checkbox] {
+  display: none;
+}
+
+.createPage form .radiogroup-row input[type="checkbox"] + label {
+  background: url("http://renegadeox.com/img/off.png") no-repeat;
+  height: 17px;
+  padding-left: 18px;
+}
+
+.createPage form .radiogroup-row .label {
+  padding: 5px 0 0 0;
+}
+
+.createPage form a {
+  color: #f7941d;
+  text-decoration: underline;
+}
+
+.customCheckbox input[type="checkbox"] {
+  display: none;
+}
+
+.terms input[type="checkbox"] {
+  display: block;
+}
+
+.customCheckbox input[type="checkbox"] + label {
+  background: url("images/layout/sprite_map.png") no-repeat;
+  background-position: 0 -110px;
+  height: 10px;
+  padding-bottom: 10px;
+  width: 30px !important;
+}
+
+.customCheckbox input[type="checkbox"]:checked + label {
+  background: url("images/layout/sprite_map.png") no-repeat;
+  background-position: -36px -110px;
+  height: 10px;
+  padding-bottom: 10px;
+  width: 30px !important;
+}
+
+.terms input[type="checkbox"] {
+  background: url("images/layout/sprite_map.png") no-repeat;
+  background-position: 0 -110px;
+  height: 10px;
+  padding-bottom: 10px;
+  width: 22px !important;
+  border: none;
+  float: left;
+  margin-right: 8px;
+}
+
+.terms input[type="checkbox"]:checked {
+  background-position: -36px -110px;
+}
+
+.terms input[type="checkbox"].error {
+  background: url("images/layout/sprite_map.png") no-repeat;
+  background-position: -126px -110px;
+  border: none;
+}
+
+.createPage form .customCheckbox2 label {
+  width: 9px;
+}
+
+.createPage form .url-suggest {
+  width: 619px;
+}
+.createPage form .url-suggest label {
+  float: right;
+  display: block;
+  width: 300px;
+}
+
+.createPage form .url-alternatives {
+  vertical-align: top;
+  overflow: hidden;
+  border-right: solid #ececec 1px;
+  float: right;
+  width: 51%;
+}
+
+.createPage form .url-alternatives select {
+  padding: 5px 0px;
+  margin: 0 0 0 19px;
+  width: 100%;
+  border-top: solid #ececec 1px;
+  border-bottom: solid #ececec 1px;
+}
+
+.pageSuggestionTitle {
+  padding: 5px 10px 5px 0;
+}
+
+.createPage form span.customSelect {
+  background: #f9f9f9 url(images/homepage/arrow_black.png) right center no-repeat;
+  padding: 10px 12px 10px 13px;
+  width: 29%;
+  border: 1px solid #ececec;
+}
+
+.createPage form input.error, .createPage form select.error {
+  border: 1px solid #ef4135;
+  background: #fdecea;
+}
+
+.createPage form label.error {
+  display: none !important;
+  width: 0;
+}
+
+span.error {
+  color: #ef4135;
+}
+
+.createPage form .url-alternatives select.error {
+  width: 94%;
+}
+
+.createPage form .pick-amount label {
+  width: 145px;
+}
+
+.createPage form .pick-amount label:first-child {
+  width: 320px;
+}
+
+.createPage form .pick-amount label.first_amount {
+  width: 70px;
+}
+
+.createPage form .pick-amount input[type="radio"] {
+  color: #f7941d;
+  float: left;
+  display: none;
+}
+
+.createPage form .pick-amount input[type="radio"] + label {
+  background: url("images/layout/checkbox_sprite.png") no-repeat;
+  height: 20px;
+  text-indent: 25px;
+  margin: 13px 0 0 0;
+  padding: 0;
+  background-position: 0 0;
+}
+
+.createPage form .pick-amount input[type="radio"]:checked + label {
+  background: url("images/layout/checkbox_sprite.png") no-repeat;
+  height: 20px;
+  text-indent: 25px;
+  margin: 13px 0 0 0;
+  padding: 0;
+  background-position: 0 -20px;
+}
+
+.createPage form input.error, .createPage form select.error {
+  border: 1px solid #ef4135;
+  background: #fdecea;
+  opacity: 1 !important;
+}
+.createPage form input.error p.required_text, .createPage form select.error p.required_text {
+  display: none;
+}
+
+#team-error {
+  width: 300px;
+  position: absolute;
+  margin: 10px 0;
+  height: 10px;
+  text-align: center;
+  left: 61px;
+}
+#team-error ul {
+  padding: 0;
+  margin: 0;
+}
+
+.createPage .error-list {
+  margin-left: 0;
+}
+.createPage .error-list ul {
+  padding-left: 14px;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .createPage form .form-item label {
+    width: 58%;
+  }
+
+  .enterAmount {
+    width: 77px;
+  }
+
+  .unit {
+    left: 0%;
+    top: 14px;
+  }
+
+  .createPage form span.customSelect {
+    width: 294px;
+    padding: 10px 2px;
+    float: right;
+  }
+
+  .createPage form .url-suggest {
+    width: 100%;
+  }
+
+  .createPage form .url-suggest label {
+    width: 49%;
+  }
+
+  .createPage form .url-suggest select {
+    margin-right: 55px;
+    background: #f9f9f9;
+  }
+
+  .createPage form .pick-amount label:first-child {
+    width: 59%;
+  }
+
+  .createPage form .pick-amount label {
+    width: 145px;
+  }
+
+  .createPage form .url-alternatives {
+    width: 44.5%;
+    margin-right: 51px;
+  }
+
+  .createPage form input, .createPage form select {
+    float: right;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .createPage {
+    width: 94%;
+    margin-left: 3%;
+  }
+  .createPage p {
+    font-size: 14px;
+  }
+
+  .createPage form {
+    font-size: 14px;
+  }
+
+  .createPage form input, .createPage form select {
+    padding: 11px 2px;
+    width: 96%;
+    font-size: 14px;
+  }
+
+  .createPage form select {
+    width: 100% !important;
+    top: 27px;
+    font-size: 14px;
+  }
+
+  .createPage form span.customSelect {
+    width: 89%;
+    padding-left: 0;
+    font-size: 16px;
+  }
+
+  .createPage form .pick-amount input.radio {
+    width: 18px;
+  }
+
+  .customCheckbox input[type="checkbox"] + label {
+    margin-bottom: 5px;
+  }
+
+  .createPage form button.submit {
+    width: 100%;
+  }
+
+  .createPage form .pick-amount label.first_amount {
+    width: 20%;
+  }
+
+  .createPage form .url-suggest {
+    width: 100%;
+  }
+  .createPage form .url-suggest label {
+    float: left;
+    width: 100%;
+  }
+
+  .createPage form .url-alternatives {
+    float: left;
+    width: 98%;
+  }
+
+  .createPage form .url-alternatives select {
+    margin: 0;
+    width: 100%;
+    background: #f9f9f9 url("images/homepage/arrow_black.png") no-repeat;
+    background-position: 99% 10px;
+    padding: 11px 0;
+  }
+
+  .enterAmount {
+    float: left;
+    width: auto;
+  }
+
+  .unit {
+    left: 10%;
+    top: 13px;
+  }
+
+  .createPage form .pick-amount label p {
+    padding: 4px 0 0 0;
+  }
+
+  .error-list {
+    margin-left: 0px;
+    font-size: 13px;
+  }
+  .error-list ul li {
+    padding: 3px 0;
+  }
+
+  .createPage form input.jg-placeholder-input {
+    width: 150px;
+  }
+}
+.thank_you_inner {
+  width: 480px;
+  padding: 40px 0 300px 0;
+  position: relative;
+}
+
+.thank_you_inner h2 {
+  margin: 0 0 25px 0;
+  font-size: 50px;
+}
+
+.thank_you_inner ul
+.thank_you_inner .regCTA {
+  width: 265px;
+  font-family: AvantGardeGothicITCW01Bd, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.thank_you_inner div.thanksUnderline {
+  width: 100%;
+  height: 1px;
+  background: #ececec;
+  margin: 20px 0;
+}
+
+.thank_you_inner .spread-social {
+  margin: 30px 0 20px 0 !important;
+}
+
+.thank_you_inner .spread-social ul li.twitter_box {
+  background-position: -85px 0px;
+}
+
+.thank_you_inner .spread-social ul li.fb_box {
+  background-position: -41px 0;
+}
+
+.thank_you_inner .spread-social ul li.web_box {
+  background-position: 0px 0px;
+}
+
+.follow_us ul {
+  padding: 0;
+  margin: 0;
+}
+
+.follow_us ul li {
+  display: block;
+  float: left;
+  margin: 0 10px;
+}
+.follow_us ul li:first-child {
+  margin-left: 0;
+}
+
+.thank_you_inner .regCTA {
+  padding: 15px 0;
+  width: 340px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .thank_you_inner .siteCTA {
+    width: 55%;
+    text-align: center;
+  }
+
+  .thank_you_inner .spread-social {
+    margin: 20px 0 20px 0 !important;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .thank_you_inner {
+    width: 94%;
+    padding: 0 3%;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .thank_you_inner .regCTA {
+    width: 92%;
+    text-align: center;
+    line-height: 20px;
+    margin: 0;
+    padding: 10px 4%;
+  }
+
+  .follow_us ul li {
+    width: 65%;
+    max-width: 190px;
+    float: none;
+    margin: 10px 0;
+  }
+  .follow_us ul li:first-child {
+    margin-left: 0;
+  }
+}
+.forgotPassword {
+  margin: 0 0 300px 0;
+  font-size: 14px;
+}
+
+.forgotPassword h2 {
+  font-size: 36px;
+}
+
+.forgotPassword form input {
+  width: 300px;
+  padding: 11px 2px;
+}
+
+.forgotPassword form .form-item label {
+  width: 160px;
+  float: left;
+  padding: 11px 0;
+}
+
+.forgotPassword form input.error {
+  border: 1px solid #ef4135;
+  background: #fdecea;
+  opacity: 1 !important;
+}
+.forgotPassword form input.error p.required_text {
+  display: none;
+}
+
+.forgotPassword form label.error {
+  display: none !important;
+  width: 0;
+}
+
+.forgotPassword form button {
+  width: 304px;
+  margin: 10px 0 0 160px;
+}
+
+a.back-home {
+  color: #f7941d;
+  text-decoration: underline;
+  margin-left: 160px;
+}
+
+.site-container a.back-home-thanks {
+  color: #f7941d;
+  text-decoration: underline;
+  margin-left: 0;
+}
+
+.forgot-links {
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .forgotPassword {
+    width: 92%;
+    padding: 0;
+    margin: 0 auto 150px;
+  }
+
+  .site-container .forgotPassword h2 {
+    font-size: 20px;
+  }
+
+  .forgotPassword form input {
+    width: 95%;
+  }
+
+  .forgotPassword form button {
+    width: 97%;
+    margin: 10px 0 0 0;
+  }
+
+  a.back-home {
+    margin-left: 0;
+  }
+}
+.site-container .contact {
+  font-size: 14px;
+}
+.site-container .contact a {
+  color: #f7941d !important;
+  text-decoration: underline;
+}
+
+.contacts h2 {
+  font-size: 36px;
+}
+
+.contact_column {
+  width: 390px;
+}
+
+.first_column {
+  float: left;
+}
+
+.last-column {
+  float: right;
+}
+
+.contact_column ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contact_column ul li {
+  display: block;
+  width: 100%;
+  padding: 4px 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.contact_column ul li.zebra {
+  background: #f9f9f9;
+}
+.contact_column ul li:hover {
+  background: #f7941d;
+  color: #fff;
+}
+
+.contact_column ul li p {
+  float: left;
+  padding: 3px 0 0 0;
+  margin: 0;
+}
+
+.contact_column ul li .social_contact {
+  width: 20px;
+  float: right;
+  background-image: url(images/layout/sprite_map.png);
+  background-repeat: no-repeat;
+  margin: 0 5px;
+}
+
+.contact_column ul li .twitter_contact {
+  background-position: -102px -108px;
+}
+
+.contact_column ul li .facebook_contact {
+  background-position: -73px -108px;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .contact_column {
+    width: 45%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  .site-container .contact {
+    margin-bottom: 500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .site-container .contact {
+    font-size: 13px;
+    width: 94%;
+    padding: 0 3%;
+    margin-bottom: 40px;
+  }
+
+  .contact_column {
+    width: 100%;
+    float: none;
+  }
+
+  .contact_column ul li {
+    width: 96%;
+    padding: 4px 2%;
+  }
+}
+.site-container .termsConditions {
+  font-size: 14px;
+  width: 460px;
+  padding: 0 0 40px 0;
+}
+.site-container .termsConditions a {
+  color: #f7941d;
+  text-decoration: underline;
+}
+.site-container .termsConditions p {
+  line-height: 22px;
+}
+
+.contacts h2 {
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 500px) {
+  .site-container .termsConditions {
+    width: 92%;
+    padding: 0 4%;
+  }
+  .site-container .termsConditions p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+/**
+ * @license
+ * MyFonts Webfont Build ID 2876247, 2014-09-03T04:46:29-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ITC Avant Garde Gothic Std Bold by ITC
+ * URL: http://www.myfonts.com/fonts/itc/avant-garde-gothic/std-bold/
+ * Copyright: Font software Copyright 1993, 1994, 2001 Adobe Systems Incorporated. Typeface designs Copyright 2005 International Typeface Corporation. All rights reserved.
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2876247
+ * 
+ * ┬® 2014 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'AvantGardeGothicITCW01Bd';
+  src: url("webfonts/2BE357_0_0.eot");
+  src: url("webfonts/2BE357_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2BE357_0_0.woff") format("woff"), url("webfonts/2BE357_0_0.ttf") format("truetype");
+}
+footer {
+  width: 100%;
+  background: #f9f9f9;
+  overflow: hidden;
+  border-top: 1px solid #ececec;
+  padding: 45px 0 0 0;
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 175px;
+}
+
+footer section.footer-banner nav {
+  overflow: hidden;
+}
+
+footer section.footer-banner nav ul li {
+  display: block;
+  padding: 0 0 0 10px;
+  float: left;
+}
+
+footer section.footer-banner nav ul li:nth-child(1) {
+  padding: 0;
+}
+
+footer section.footer-banner nav ul li.bullet {
+  background-image: url(images/layout/sprite_map.png);
+  background-repeat: no-repeat;
+  background-position: -126px -71px;
+  height: 20px;
+  width: 2px;
+  margin: 0 0 0 5px;
+}
+
+footer section.footer-banner nav ul li a {
+  color: #f7941d;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer section.footer-legal p {
+  font-size: 10px;
+  line-height: 16px;
+  margin-top: 35px;
+  clear: both;
+}
+
+@media only screen and (max-width: 500px) {
+  footer {
+    background: #f9f9f9;
+    padding: 30px 0;
+    height: 260px;
+  }
+
+  footer {
+    padding: 45px 0 0 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: auto;
+  }
+
+  footer section.footer-banner {
+    float: none;
+    width: 92%;
+    padding: 0px 4%;
+    background: #f9f9f9;
+  }
+
+  footer section.footer-banner nav ul li {
+    padding: 5px 0;
+    display: block;
+    float: none;
+  }
+
+  footer section.footer-legal {
+    float: none;
+    width: 92%;
+    padding: 0 4% 20px 4%;
+  }
+
+  footer section.footer-legal p {
+    margin: 15px 0 0 0;
+  }
+}

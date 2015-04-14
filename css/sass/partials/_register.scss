@@ -1,0 +1,299 @@
+// Resgister.html
+// Register page styling
+
+.registerSection {
+	float: left;
+	width: 489px;
+	margin-bottom: 100px;
+}
+.registerSection .reg_title h2 {
+	font-size: 36px;
+	margin: 40px 0 0 0;
+}
+.registerSection .reg_title p {
+	margin: 0 0 30px 0; 
+}
+.registerSection form {
+	font-size: 14px;
+	margin: 0 0 35px 0;
+	.required_text {
+		margin-left: 160px;
+		margin-top: -10px;
+	}
+}
+.registerSection form .form-item {
+	width: 100%;
+	clear: both;
+	padding: 5px 0;
+}
+.registerSection form label {
+	width: 160px;
+	float: left;
+	padding: 8px 0 0 0;
+}
+.registerSection form input, .registerSection form select {
+	padding: 11px 8px;
+	width: 282px;
+}
+.error-text {
+	color: $red;
+}
+.registerSection form input.error,.registerSection form select.error {
+	border: 1px solid $red;
+	background: #fdecea;
+	opacity: 1!important;
+	p.required_text {
+		display: none;
+	}
+}
+.registerSection form label.error, .logIn-box form label.error {
+	display: none!important;
+	width: 0;
+}
+.registerSection form select {
+	width: 300px;
+}
+.registerSection form select.border option {
+	border: 1px solid $grey-border;
+}
+form button.submit {
+	width: 300px;
+	border: none;
+	margin-left: 160px;
+	padding: 12px 0;
+	color: $white;
+}
+.required_text {
+	margin-left: 160px;
+	margin-top: -10px;
+}
+.registerSection form span.customSelect { 
+    background: $light-grey url(images/homepage/arrow_black.png) right center no-repeat;
+    padding: 10px;
+    width:57%;
+    border: 1px solid $grey-border;
+}
+::-webkit-input-placeholder {
+   color: #b9b6ae;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #b9b6ae;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #b9b6ae;  
+}
+
+:-ms-input-placeholder {  
+   color: #b9b6ae;  
+}
+
+// LOG IN BOX
+.logIn-box {
+	float: right;
+	width: 340px;
+	background: $hp-banner;
+	color: $white;
+	margin: 155px 0 0 0;
+	padding: 20px;
+}
+.logIn-box .required_text {
+margin-left: 105px;
+margin-top: 0px;
+}
+.logIn-box h3 {
+	font-size: 18px;
+	margin: 0 0 30px 0;
+	text-transform: none!important;
+}
+.logIn-box form .form-item {
+	width: 100%;
+	clear: both;
+	padding: 5px 0;
+	font-size: 14px;
+}
+.logIn-box form label {
+	width: 105px;
+	float: left;
+	padding: 10px 0;
+}
+.logIn-box form input {
+ 	padding: 11px 2px;
+	border: 1px solid $grey-border;
+	width: 224px;
+}
+.logIn-box form button.submit {
+	width: 230px;
+	margin-left: 105px;
+} 
+.logIn-box form label.error {
+	width: 0;
+}
+.logIn-box form input.error {
+	border: 1px solid $red;
+	background: #fdecea;
+}
+// forgot password
+.forgot-pwd a {
+	color: $orange;
+	border-bottom: 1px solid $orange;
+	font-size: 14px;
+	margin-left: 105px;
+}
+
+span.styled_black { 
+    background: $light-grey url(images/homepage/arrow_black.png) right center no-repeat;
+    padding:7px 9px;
+    width: 280px;
+    border: 1px solid $grey-border;
+}
+.selectStyle {
+	position: relative;
+}
+
+//
+// TABLET STYLING
+// 
+@include respond-to(tablet) { 
+	.registerSection {
+		width: 55%;
+	}
+	.registerSection .reg_title h2 {
+		font-size: 26px;
+	}
+	.registerSection .reg_title p {
+		margin: 0 0 25px 0; 
+		font-size: 14px;
+	}
+	.registerSection form {
+		font-size: 14px;
+		margin: 0 0 30px 0;
+	}
+	.registerSection form label {
+		width: 32%;
+	}
+	.registerSection form input, .registerSection form select {
+		width: 62%;
+	}
+	.registerSection form input[type="date"] {
+		padding: 20px 8px 20px 10px;
+	}
+	.registerSection form select {
+		width: 68%;
+	}
+	form button.submit {
+		width: 66%;
+		margin-left: 32%;
+	}
+	.required_text {
+		margin-left: 32%;
+	}
+	.registerSection form span.customSelect { 
+	    width:61%;
+	}
+	// LOG IN BOX
+	.logIn-box {
+		width: 35%;
+		margin: 140px 0 0 0;
+		padding: 10px;
+	}
+	.logIn-box .form-item {
+		padding: 0;
+	}
+	.logIn-box h3 {
+		font-size: 14px;
+		margin: 0 0 10px 0;
+	}
+	.logIn-box form label {
+		padding: 0;
+	}
+	.logIn-box form input {
+		width: 96%;
+	}
+	.logIn-box form button.submit {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.forgot-pwd a {
+		margin-left:0;
+	}
+}
+@include respond-to(mobile) { 
+	.registerSection {
+		float: none;
+		width: 94%;
+		padding: 0 3%;
+		font-size: 14px;
+		margin-bottom: 25px;
+	}
+	.register p {
+		margin: 0;
+	}
+	.registerSection .reg_title h2 {
+		font-size: 20px;
+		margin: 10px 0 0 0;
+	}
+	.registerSection .reg_title p {
+		margin: 0 0 15px 0; 
+		width: 80%;
+	}
+	.registerSection form {
+		margin: 0 0 20px 0;
+	}
+	.registerSection form .form-item {
+		width: 100%;
+	}
+	.registerSection form label {
+		width: 100%;
+	}
+	.registerSection form input, .registerSection form select {
+		width: 92%;
+		top: 24px;
+		font-size: 16px;
+	}
+	.registerSection form select {
+		width: 100%;
+	}
+	form button.submit {
+		width: 100%;
+		margin-left: 0;
+	}
+	.required_text {
+		margin-left: 0!important;
+	}
+	.registerSection form span.customSelect {
+		width: 91%;
+	}
+
+	// LOG IN BOX
+	.logIn-box {
+		float: none;
+		width: 94%;
+		margin: 0;
+		padding: 20px 3%;
+		border-right: 3px solid $hp-banner;
+	}
+	.logIn-box h3 {
+		font-size: 14px;
+		margin: 0 0 10px 0;
+	}
+	.logIn-box form label {
+		width: 100%;
+	}
+	.logIn-box form input {
+		width: 97%;
+	}
+	.logIn-box form button.submit {
+		width: 99%;
+		margin-left: 0;
+	}
+	.forgot-pwd {
+		text-align: center;
+	}
+	.forgot-pwd a {		
+		font-size: 14px;
+		margin-left: 0;
+	}
+}

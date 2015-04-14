@@ -1,0 +1,205 @@
+// THEUNDIERUN.CO.UK
+// HEADER STYLESHEET
+// _HEADER.SCSS
+
+
+// header styling
+header {
+	position: relative;
+	overflow: hidden;
+	width: 940px;
+	padding: 0 140px;
+	background: $white;
+	text-transform: uppercase;
+}
+header .headerBanner {
+	top: 0;
+	width: 120px;
+	padding: 15px 10px;
+	float: left;
+	background: $hp-banner;	
+	color: $white;
+	background: $hp-banner;
+}
+header .register-logo {
+	width: 120px;
+	padding: 15px 10px;
+}
+header .headerBanner h1 {
+	text-align: center;
+	margin: 0;
+}
+// site logo
+header .headerBanner h1 img {
+	width: 101px;
+	margin: auto;
+	display: block;
+}
+.home header .headerBanner {
+	padding: 25px 40px;
+	width: 300px;
+}
+// site nav
+nav.siteNav {
+	float: right;
+	width: auto;
+	margin: 30px 0 0 0;
+}
+nav.siteNav ul {
+	padding: 0;
+}
+nav.siteNav ul li {
+	float: right;
+	list-style:none;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	@include font_title_copy;
+}
+nav.siteNav ul li a {
+	text-decoration: none;
+	color: $black;
+}
+
+// #undierun
+nav.siteNav ul li.nav-twitter {
+	margin: 20px 25px 5px 0;
+	padding: 0 0 0 30px;
+}
+// CRUK
+nav.siteNav ul li.nav-cruk {
+	padding: 15px 15px 5px 20px;
+}
+// log in button
+nav.siteNav ul li.logIn {
+	margin: 10px 0 5px 15px;
+	padding: 10px 10px;
+	display: none;
+}
+
+@include respond-to(tablet) {
+	header {
+		width: 94%;
+		padding: 0 3%;
+	}
+	.home header .headerBanner, header .headerBanner {
+		width: 42%;
+		padding: 5px 0;
+		border: 2px solid #261c02;
+	}	
+	header .headerBanner {
+		width: 120px;
+		padding: 15px 10px;
+	}	
+	header .register-logo {
+		width: 120px;
+		padding: 15px 10px;
+	}
+	// site nav
+	nav.siteNav {
+		width: 57%;
+		margin: 5px 0 0 0;
+	}
+	nav.siteNav ul li {
+		margin: 0 5px;
+		padding: 5px 1%;
+		font-size: 13px;
+	}
+	nav.siteNav ul li.nav-cruk {
+		padding: 4px 15px 5px 27px;
+	}
+
+	// #undierun
+	// nav.siteNav ul li.nav-twitter {
+	// 	margin: 20px 0 5px 0;
+	// 	background-position: 8px -89px;
+	// 	padding: 0 0 0 10px;
+ // 	}
+	// CRUK
+	nav.siteNav ul li.nav-cruk {
+		margin: 15px 0 5px 15px;
+		width: 117px;
+	}
+	// cancer research logo
+	nav.siteNav ul li.nav-cancer {
+		width: 84px;
+		margin: 0;
+	}
+	// log in button
+	nav.siteNav ul li.logIn {
+		margin: 25px 0 5px 15px;
+		width: 75px;
+		padding: 5px 0;		
+	}
+}
+@include respond-to(mobile) { 
+	header {
+		width: 100%;
+		padding: 0;
+	}
+	.home header .headerBanner, header .headerBanner {
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 20px 0 20px;
+	}
+	nav.siteNav {
+		width: 92%;
+		margin: auto;
+		float: none;
+		border-bottom: 1px solid $underline;
+		overflow: hidden;
+		padding-bottom: 0;
+		padding: 0 0 0;
+	}
+	.home header nav.siteNav {
+		padding: 0 0 20px;
+	}
+	nav.siteNav ul li {
+		width: auto;
+		padding: 10px 0;
+		margin: 0;
+		font-size: 15px;
+	}
+	div.nav-underline {
+		width: 100%;
+		height: 1px;
+		margin: 10px 0;
+		background: $underline;
+		clear: both;
+	}
+	// cancer research logo
+	nav.siteNav ul li.nav-cancer {
+		width: 31%;
+		float: left;
+	}
+	// CRUK
+	nav.siteNav ul li.nav-cruk {
+		margin: 4px 0 0 0;
+		float: right;
+		width: 57%;
+		padding: 15px 15px 5px 15px;
+	}
+	// #undierun
+	nav.siteNav ul li.nav-twitter {
+		margin: 14px 0 5px 0;
+		float: left;
+		padding: 0;
+
+	}
+	// log in button
+	nav.siteNav ul li.logIn {
+		float: right;
+		margin: 5px 0 5px 0;
+		padding:8px 0;
+		width: 45%;
+		display: none;
+	}
+	.home header nav.siteNav {
+		display: none!important;
+		padding: 0 0 20px;
+	}
+	.home  nav.siteNav {
+		padding: 0 0 10px;
+	}
+}

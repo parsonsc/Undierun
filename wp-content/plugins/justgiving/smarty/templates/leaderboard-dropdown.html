@@ -1,0 +1,82 @@
+{literal}
+<style type="text/css">
+.js-active .teams-dropdown button { display: none}
+</style>
+<script type="text/javascript">
+jQuery(document).ready(function($)
+{
+    $("body").addClass('js-active');
+    $("#teams").change(function() {
+        //$("#intro").html($("#teams option:selected").data('teamstory'));
+        if (parseInt($("#teams option:selected").data('members')) > 0){
+            if (parseInt($("#teams option:selected").data('members')) == 1)
+                 $("#mems").html($("#teams option:selected").data('members') +' Undie Runner registered');
+            else $("#mems").html($("#teams option:selected").data('members') +' Undie Runners registered');
+            $("#mems").show();
+        }
+        else{
+            $("#mems").hide();        
+        }/*
+        if ($("#teams option:selected").data('fbpage').length > 0){
+            var link = $("#teams option:selected").data('fbpage');
+            $("#joinevent").empty()
+            $('<a >',{
+                text: 'Show Me The Event Page',
+                title: 'Join this event',
+                href: link,
+		target: '_blank'
+
+            }).addClass('uni_register').appendTo('#joinevent');        
+            $("#joinevent").show()
+        }else{
+            $("#joinevent").hide();        
+        }
+        */
+    });
+});    
+</script>
+{/literal}
+    <div class="teams-dropdown">
+        <form action="" method="get">
+            <div class="selectStyle">
+                <select id="teams" name="selteam" class="styled border" placeholder="Select A Uni" value="Select A Uni">
+                <option class"selectUniHead" value=""  data-teamstory="" disabled selected> <strong>Select A Uni</strong></option>
+        {foreach from=$teams key=k item=v}
+                <option value="{$v.teamshortname}" data-teamstory="" data-members="{$v.numMembers}" data-fbpage="{$v.teamfbpage}">{$v.teamname|@ucfirst}</option>
+        {/foreach} 
+                </select> 
+            </div>
+            <button type="submit"> Go </button>
+        </form>
+        <h3 id="mems">
+            {if $sel.numMembers gt 0}
+                {if $sel.numMembers eq 1}
+                    {$sel.numMembers|number_format} Undie Runner
+                {else} 
+                    {$sel.numMembers|number_format} Undie Runners
+                {/if}
+            {else}
+                {$players|number_format} Undie Runner{if $players ne 1}s{/if} 
+            {/if} registered       
+        </h3> 
+
+        <div id="intro">
+            {if $sel.teamstory eq ''}
+                
+            {else}
+                {$sel.teamstory}
+            {/if}
+        </div>
+        <div id="joinevent" class="joinEvent">
+             <a href="register/" class="join_register">
+                <div class="register-button" style="padding: 15px; font-size: 25px;">
+                Register Now<span class="arrow"></span>
+                </div>
+            </a>       
+        </div>    
+         <div class="teamInfo">
+            <p>Prove your Uni&rsquo;s the best by gathering the biggest team together. Then suss out the competition on our leader board, and prepare to share. Tweet about it. Facebook it. Instagram selfies in your smalls. Show the world how you&rsquo;re helping to beat cancer sooner.</p>
+        </div>    
+        
+    </div>
+    

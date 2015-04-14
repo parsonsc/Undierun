@@ -1,0 +1,197 @@
+<style type="text/css">
+    .choice{display:none}
+    .form-row{margin-bottom: 10px; display: inline-block; width: 100%;}
+    #justgiving-form .form-row label{width: 40%; float: left}
+    #justgiving-form .form-row input,
+    #justgiving-form .form-row select
+    {width: 40%; float: left}
+    #justgiving-form .choice.submit{clear: both;}
+</style>
+<form action="#" class="form-horizontal">
+    <div id="justgiving-form">
+        <div id="jgtype" class="form-table">
+            <label for="justgiving-type">Type</label>
+            <select name="type" id="justgiving-type" onchange="showparams()">
+                <option value=""></option>
+                <option value="login">Login</option>
+                <option value="logout">Logout</option>
+                <option value="register">Register</option>
+                <option value="recover-password">Forgot Password</option>
+                <option value="create-page">Create page</option>
+                <option value="view-user">View user</option>
+                <option value="paypal">Pay in via Paypal</option>
+                <option value="justgiving">Pay in via justgiving</option>
+                <option value="leaderboard">Leaderboard</option>
+                <option value="thankyou">Thankyou</option>
+            </select><br />
+            <small>specify the type of shortcode</small>
+        </div>
+        <div id="jglogin" class="choice form-table">
+            <div class="form-row">
+                <label for="forgot-id">Forgot password page ID</label>
+                <input type="number" step="1" min="0" name="forgot" id="forgot-id" value="" />
+            </div>
+            <div class="form-row">
+                <label for="redirect-id">Redirect to page ID after login</label>
+                <input type="number" step="1" min="0" name="redirect" id="redirect-id" value="" />
+            </div>
+            <div class="form-row">
+                <label for="create-id">Create page page ID after login (overridden by above)</label>
+                <input type="number" step="1" min="0" name="create" id="create-id" value="" />
+            </div> 
+            <div class="form-row">        
+                <label for="template-id">Template</label>
+                <input type="text" name="template" id="template-id" value="" />
+            </div>             
+        </div>
+        
+        <div id="jglogout" class="choice form-table">
+            <div class="form-row">
+                <label for="redirect-id">Redirect to page ID after logout</label>
+                <input type="number" step="1" min="0" name="redirect" id="redirect-id" value="" />
+            </div>
+            <div class="form-row">
+                <label for="create-id">Create page page ID after logout (overridden by above)</label>
+                <input type="number" step="1" min="0" name="create" id="create-id" value="" />
+            </div>
+            <div class="form-row">        
+                <label for="template-id">Template</label>
+                <input type="text" name="template" id="template-id" value="" />
+            </div>             
+        </div>
+        <div id="jgregister" class="choice form-table">
+            <div class="form-row">
+                <label for="redirect-id">has JG account and no create page go here</label>
+                <input type="number" step="1" min="0" name="redirect" id="redirect-id" value="" />
+            </div>
+            <div class="form-row">
+                <label for="create-id">no account create page go here</label>
+                <input type="number" step="1" min="0" name="create" id="create-id" value="" />
+            </div>
+            <div class="form-row">
+                <label for="thanks-id">Thanks page</label>
+                <input type="number" step="1" min="0" name="thanks" id="thanks-id" value="" />
+            </div>
+            <div class="form-row">
+                <label for="login-id">has JG account and create page go here</label>
+                <input type="number" step="1" min="0" name="login" id="login-id" value="" />
+            </div>            
+            <div class="form-row">        
+                <label for="template-id">Template</label>
+                <input type="text" name="template" id="template-id" value="" />
+            </div>             
+        </div>
+        <div id="jgrecover-password" class="choice form-table">
+            <div class="form-row">
+                <label for="login-id">Login page</label>
+                <input type="number" step="1" min="0" name="login" id="login-id" value="" />
+            </div>
+            <div class="form-row">
+                <label for="home-id">home page</label>
+                <input type="number" step="1" min="0" name="home" id="home-id" value="" />
+            </div>            
+            <div class="form-row">        
+                <label for="template-id">Template</label>
+                <input type="text" name="template" id="template-id" value="" />
+            </div>             
+        </div>  
+        <div id="jgcreate-page" class="choice form-table">
+            <div class="form-row">
+                <label for="thanks-id">made a page goto thanks </label>
+                <input type="number" step="1" min="0" name="thanks" id="thanks-id" value="" />
+            </div>
+            <div class="form-row">
+                <label for="redirect-id">made a page no teampage goto (overwrites above)</label>
+                <input type="number" step="1" min="0" name="redirect" id="redirect-id" value="" />
+            </div>
+            <div class="form-row">
+                <label for="teampage-id">made a page teampage goto (overwrites above)</label>
+                <input type="number" step="1" min="0" name="teampage" id="teampage-id" value="" />
+            </div>
+            <div class="form-row">
+                <label for="paid-id">if pay to create page and not paid goto</label>
+                <input type="number" step="1" min="0" name="paid" id="paid-id" value="" />
+            </div>
+            <div class="form-row">        
+                <label for="template-id">Template</label>
+                <input type="text" name="template" id="template-id" value="" />
+            </div>             
+        </div>  
+
+        <div id="jgview-user" class="choice form-table">
+            <div class="form-row">        
+                <label for="template-id">Template</label>
+                <input type="text" name="template" id="template-id" value="" />
+            </div>             
+        </div>    
+        <div id="jgpaypal" class="choice form-table">
+            <div class="form-row">
+                <label for="redirectpaid-id">Redirect to page ID after payment</label>
+                <input type="number" step="1" min="0" name="redirectpaid" id="redirectpaid-id" value="" />
+            </div>
+            <div class="form-row">        
+                <label for="template-id">Template</label>
+                <input type="text" name="template" id="template-id" value="" />
+            </div>             
+        </div>  
+        <div id="jgjustgiving" class="choice form-table">
+            <div class="form-row">
+                <label for="redirectpaid-id">Redirect to page ID after payment</label>
+                <input type="number" step="1" min="0" name="redirectpaid" id="redirectpaid-id" value="" />
+            </div>
+            <div class="form-row">        
+                <label for="loggedin-id">Must be logged in to use ?</label>
+                <input type="checkbox" name="loggedin" id="loggedin-id" value="1" />
+            </div>
+            <div class="form-row">        
+                <label for="pageurl-id">if not logged in then the default page url to pay to</label>
+                <input type="text" name="pageurl" id="pageurl-id" value="" />
+            </div>              
+            <div class="form-row">        
+                <label for="template-id">Template</label>
+                <input type="text" name="template" id="template-id" value="" />
+            </div>             
+        </div>  
+        <div id="jgleaderboard" class="choice form-table">
+            <div class="form-row">        
+                <label for="orderby-id">Order By</label>
+                <select name="orderby" id="orderby-id" >
+                    <option value=""></option>
+                    <option value="teamname">Team name</option>
+                    <option value="teamtarget">Target</option>
+                    <option value="numMembers">number of members</option>
+                    <option value="raisedSoFar">Amount raised so far</option>
+                </select>
+            </div> 
+            <div class="form-row">        
+                <label for="order-id">Order</label>
+                <select name="order" id="order-id">
+                    <option value=""></option>
+                    <option value="desc">Descending</option>
+                    <option value="asc">Ascending</option>
+                </select>
+            </div>    
+            <div class="form-row">
+                <label for="limit-id">Limit</label>
+                <input type="number" step="1" min="0" name="limit" id="limit-id" value="" />
+            </div>            
+            <div class="form-row">        
+                <label for="template-id">Template</label>
+                <input type="text" name="template" id="template-id" value="" />
+            </div>             
+        </div>  
+        <div id="jgthankyou" class="choice form-table">
+            <div class="form-row">
+                <label for="logout-id">logout page</label>
+                <input type="number" step="1" min="0" name="logout" id="logout-id" value="" />
+            </div>        
+            <div class="form-row">        
+                <label for="template-id">Template</label>
+                <input type="text" name="template" id="template-id" value="" />
+            </div>             
+        </div>       
+        <p class="choice submit">
+            <input type="button" id="justgiving-submit" onclick="I_Insert();I_Close();" class="button-primary" value="{{jgADDclose}}" name="submit" />
+        </p>
+    </div>
+</form>

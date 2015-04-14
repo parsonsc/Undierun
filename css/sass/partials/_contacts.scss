@@ -1,0 +1,90 @@
+// CONTACT PAGE STYLING
+// PARTIALS/_CONTACTS.SCSS
+// CONTACTS.HTML
+
+.site-container .contact {
+	font-size: 14px;
+	a {
+		color: $orange!important;
+		text-decoration: underline
+	}
+}
+.contacts h2 {
+	font-size: 36px;
+}
+.contact_column {
+	width: 390px;
+}
+.first_column {
+	float: left;
+}
+.last-column {
+	float: right;
+}
+.contact_column ul {
+	padding: 0;
+	margin: 0;
+}
+.contact_column ul li {
+	display: block;
+	width: 100%;
+	padding: 4px 10px;
+	overflow: hidden;
+	cursor: pointer;
+	&.zebra {
+		background: $light-grey;
+	}
+	&:hover {
+		background: $orange;
+		color: $white;
+	}
+}
+.contact_column ul li p {
+	float: left;
+	padding: 3px 0 0 0;
+	margin: 0;
+}
+.contact_column ul li .social_contact {
+	width: 20px;
+	float: right;
+	background-image: url(images/layout/sprite_map.png);
+	background-repeat: no-repeat;
+	margin: 0 5px;
+}
+.contact_column ul li .twitter_contact {
+	background-position: -102px -108px;
+}
+.contact_column ul li .facebook_contact {
+	background-position: -73px -108px;
+}
+
+@include respond-to(tablet) {
+	.contact_column {
+		width: 45%;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+	.site-container .contact {
+		margin-bottom: 500px;
+	}
+}
+
+@include respond-to(mobile) {
+	.site-container .contact {
+		font-size: 13px;
+		width: 94%;
+		padding: 0 3%;
+		margin-bottom: 40px;
+	}
+	.contact_column {
+		width: 100%;
+		float: none;
+	}
+	
+	.contact_column ul li {
+		width: 96%;
+		padding: 4px 2%;
+	}
+
+}

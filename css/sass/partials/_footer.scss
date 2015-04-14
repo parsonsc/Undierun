@@ -1,0 +1,79 @@
+footer {
+	width: 100%;
+	background: $light-grey;
+	overflow: hidden;
+	border-top: 1px solid $grey-border;
+	padding: 45px 0 0 0;
+	clear: both;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 175px;
+}
+footer section.footer-banner nav {
+	overflow: hidden;
+}
+footer section.footer-banner nav ul li {
+	display: block;
+	padding: 0 0 0 10px;
+	float: left;
+
+}
+footer section.footer-banner nav ul li:nth-child(1) {
+padding: 0;
+}
+footer section.footer-banner nav ul li.bullet {
+	background-image: url(images/layout/sprite_map.png);
+	background-repeat: no-repeat;
+	background-position: -126px -71px;
+	height: 20px;
+	width: 2px;
+	margin: 0 0 0 5px;
+}
+footer section.footer-banner nav ul li a {
+	color: $orange;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+footer section.footer-legal  p {
+	font-size: 10px;
+	line-height: 16px;
+	margin-top: 35px;
+	clear: both;
+}
+@include respond-to(mobile) { 
+footer {
+	background: $light-grey;
+	padding: 30px 0;
+	height: 260px;
+}
+footer {
+	padding: 45px 0 0 0;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	height: auto;
+}
+footer section.footer-banner {
+	float: none;
+	width: 92%;
+	padding: 0px 4%;
+	background: $light-grey;
+}
+footer section.footer-banner nav ul li {
+	padding: 5px 0;
+	display: block;
+	float: none;
+}
+
+footer section.footer-legal {
+	float: none;
+	width: 92%;
+	padding: 0 4% 20px 4%;
+}
+footer section.footer-legal p {
+	margin: 15px 0 0 0;
+}
+
+}

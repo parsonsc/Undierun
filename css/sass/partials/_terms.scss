@@ -1,0 +1,29 @@
+// CONTACT PAGE STYLING
+// PARTIALS/_CONTACTS.SCSS
+// CONTACTS.HTML
+
+.site-container .termsConditions {
+	font-size: 14px;
+	width: 460px;
+	padding: 0 0 40px 0;
+	a {
+		color: $orange;
+		text-decoration: underline
+	}
+	p {
+		line-height: 22px;
+	}
+}
+.contacts h2 {
+	font-size: 36px;
+}
+@include respond-to(mobile) {
+	.site-container .termsConditions {
+		width: 92%;
+		padding: 0 4%;
+		p {
+			line-height: 20px;
+			font-size: 12px;
+		}
+	}
+}

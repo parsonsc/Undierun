@@ -1,0 +1,25 @@
+// theundierun.co.uk
+// Main stylesheet
+// main.scss
+
+// mixins file
+@import "mixins/mixins";
+@import "mixins/_colour_palette";
+// GENERIC STYLESHEETS
+@import "partials/_normalize";
+
+// CUSTOM STYLESHEETS
+@import "partials/_main.scss";
+@import "partials/_header.scss";
+
+@import "partials/_homepage.scss";
+@import "partials/_register.scss";
+@import "partials/_create_page.scss";
+@import "partials/_thanks.scss";
+@import "partials/_forgot_pass.scss";
+@import "partials/_contacts.scss";
+@import "partials/_terms.scss";
+@import "partials/_fonts.scss";
+
+@import "partials/_footer.scss";
+
